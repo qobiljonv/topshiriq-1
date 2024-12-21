@@ -1,0 +1,36 @@
+#grid {
+  display: grid;
+  gap: 10px;
+  height: 100px;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas:
+    " header header header header main main main"
+    "header header header header footer footer footer  "
+    "section section section section3 section3 section3 section3";
+}
+
+#item1 {
+  background-color: lime;
+  grid-area: header;
+}
+
+#item2 {
+  background-color: yellow;
+  grid-area: main;
+}
+
+#item3 {
+  background-color: blue;
+  grid-area: footer;
+}
+
+#item4 {
+  background-color: black;
+  grid-area: section;
+}
+
+#item5 {
+  background-color: red;
+  grid-area: section3;
+}
